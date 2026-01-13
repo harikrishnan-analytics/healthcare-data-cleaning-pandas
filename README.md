@@ -28,7 +28,7 @@ The main notebook containing the full data cleaning workflow with detailed reaso
 
 This notebook goes beyond basic cleaning and highlights how analysts actually think about messy data.
 
-🔍 1. Inspect Before Cleaning
+1. Inspect Before Cleaning
 
 Structural inspection (info, describe)
 
@@ -36,7 +36,7 @@ Layered inspection of categorical and numeric columns
 
 Understanding what each column means, not just its datatype
 
-❓ 2. Missing Data Strategy
+2. Missing Data Strategy
 
 Differentiation between:
 
@@ -52,7 +52,7 @@ Systematic missingness
 
 Avoidance of blind imputation
 
-🗑️ 3. Defensible Column Dropping
+3. Defensible Column Dropping
 
 Example: weight
 
@@ -62,7 +62,7 @@ But dropped due to extreme, systematic missingness
 
 Emphasis on bias reduction over variable importance
 
-🔄 4. Correct Data Type Reclassification
+4. Correct Data Type Reclassification
 
 Conversion of:
 
@@ -72,7 +72,7 @@ Administrative ID columns → categorical
 
 Avoidance of treating codes as numeric quantities
 
-💊 5. Medication Feature Engineering
+5. Medication Feature Engineering
 
 Instead of using 20+ raw medication columns, the notebook engineers:
 
@@ -90,7 +90,7 @@ on_insulin
 
 This reduces dimensionality while preserving clinical signal.
 
-🎯 6. Outcome Variable Preparation
+6. Outcome Variable Preparation
 
 Preservation of original 3-class outcome (readmitted)
 
@@ -100,7 +100,7 @@ readmitted_30d (30-day readmission indicator)
 
 Explicit, documented assumptions
 
-✅ 7. Final Data Validation
+7. Final Data Validation
 
 Missingness verification
 
@@ -110,7 +110,7 @@ Outcome integrity checks
 
 Confirmation that all remaining NaNs are intentional
 
-🧪 Tools & Libraries Used
+Tools & Libraries Used
 
 Python
 
@@ -122,7 +122,7 @@ Jupyter Notebook
 
 No modeling libraries were used — this project focuses purely on data preparation quality.
 
-🚫 What This Project Intentionally Avoids
+What This Project Intentionally Avoids
 
 Blind fillna() operations
 
@@ -134,7 +134,7 @@ Treating extreme but valid values as outliers
 
 Treating data cleaning as a mechanical task
 
-🏁 Final Outcome
+Final Outcome
 
 The final dataset is:
 
